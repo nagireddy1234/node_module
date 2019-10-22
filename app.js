@@ -1,5 +1,3 @@
-//  console.log("PROCESS:", process);
-// console.log("hello this is node js");
 // const {mul,add,min,div} =require("./helpers")
 // const tot =mul(10,100);
 // const to =add(100,100);
@@ -9,13 +7,26 @@
 // console.log(to);
 // console.log(t);
 // console.log(o);
-// console.log("Hello node js");
-const http= require("http");
+// const http= require("http");
+// const server= http.createServer((req,res)=>{
+//   res.end("heyyyy from node js server");
+// });
+// server.listen(3000);
 
-const server= http.createServer((req,res)=>{
+// const express=require("express");
+// const app= express();
+// app.get("/", (req,res)=>{
+//   res.send("hey whats up from express");
+// });
+// app.listen(5000);
 
-  res.end("Hey from node js server");
+const fs= require("fs");
+const filename="target.txt";
+
+fs.readFile(filename,(err,data)=>{
+  if(err){
+    console.log(err);
+  }
+  console.log(data.toString());
 });
-
-server.listen(3000);
-
+console.log("it's asynchronus programming  ")
