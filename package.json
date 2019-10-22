@@ -18,6 +18,7 @@
   "homepage": "https://github.com/nagireddy1234/node_module#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "gitignore": "^0.6.0",
     "nodemon": "^1.19.4"
   }
 }
